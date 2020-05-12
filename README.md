@@ -18,3 +18,7 @@
 [控制header的js](https://wicky.nillia.ms/headroom.js/)<br>
 [使用教學](https://ayugioh2003.github.io/2020/02/hide-header/)<br>
 [使用教學2](https://www.jianshu.com/p/65d31c4835f5)<br>
+
+<h3>headerJS</h3>
+<h3>網頁打開header隱藏,網頁下拉,header打開,網頁往上header隱藏</h3>
+[效果頁](https://corly74.github.io/F2eComponent/headerJs/headerJs.html)<br>
