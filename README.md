@@ -8,17 +8,17 @@
 
 
 
-<h3>Switch button</h3>
-<h3>不用寫js的switch</h3>
+<h3>2.Switch button</h3>
+<h4>不用寫js的switch</h4>
 [switchButton](https://corly74.github.io/F2eComponent/switchButton/switchButton.html)
 
 
-<h3>hear 下拉隱藏/顯示js </h3>
-<h3>控制hearder狀態的javascript</h3>
+<h3>3.hear 下拉隱藏/顯示js </h3>
+<h4>控制hearder狀態的javascript</h4>
 [控制header的js](https://wicky.nillia.ms/headroom.js/)<br>
 [使用教學](https://ayugioh2003.github.io/2020/02/hide-header/)<br>
 [使用教學2](https://www.jianshu.com/p/65d31c4835f5)<br>
 
-<h3>headerJS</h3>
-<h3>網頁打開header隱藏,網頁下拉,header打開,網頁往上header隱藏</h3>
+<h3>4.headerJS</h3>
+<h4>網頁打開header隱藏,網頁下拉,header打開,網頁往上header隱藏</h4>
 [效果頁](https://corly74.github.io/F2eComponent/headerJs/headerJs.html)<br>
