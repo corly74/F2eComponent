@@ -10,7 +10,7 @@
 
 <h3>Switch button</h3>
 <h3>不用寫js的switch</h3>
-[switchButton](https://corly74.github.io/F2eComponent/switchButton)
+[switchButton](https://corly74.github.io/F2eComponent/switchButton/switchButton.html)
 
 
 <h3>hear 下拉隱藏/顯示js </h3>
