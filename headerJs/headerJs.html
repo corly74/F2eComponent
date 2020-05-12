@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dataset、array 運用</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+      
+</head>
+<style>
+    body {
+        font-family: Microsoft JhengHei;
+        min-height: 5000px;
+    }
+
+/* 控制hearder狀態的css */
+
+header {
+    background: #444;
+    color: cornsilk;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    z-index: 100;
+}
+.default {
+    top: -100px;
+}
+.fixed {
+    top: 0;
+}
+</style>
+
+<body class="over-flow-x body">
+
+  
+        <header class="default " >
+
+          
+                <div class="navbar-nav d-flex flex-row">
+                    <a class="nav-item nav-link  ml-4 mr-3" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link mr-3" href="../1.intro/index.html"> 1.intro&變數 </a>
+                    <a class="nav-item nav-link mr-3" href="../2.function/funtion.html">2.函式</a>
+                    <a class="nav-item nav-link mr-3" href="../3.Array/array.html">3.陣列與物件</a>
+                    <a class="nav-item nav-link mr-3" href="../4.operation/operation.html">4.控制判斷(運算子、if、switch)</a>
+                    <a class="nav-item nav-link mr-3" href="../5.loop/loop.html">5.迴圈</a>
+                    <a class="nav-item nav-link mr-3" href="../6.dom/dom.html">6.DOM</a>
+                    <a class="nav-item nav-link mr-3" href="../7.event/">7.event (事件)</a>
+                    <a class="nav-item nav-link active mr-3" href="../8.localStorage">8.localStorage - 瀏覽器資料儲存</a>
+                    <a class="nav-item nav-link mr-3" href="#">9.瀏覽器功能探索 (BOM)</a>
+    
+                </div>
+            </div>
+
+        </header>
+        
+    </nav>
+    <div class="container my-5 ">
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="list-group ">
+                    <a href="../8.localStorage/localStorage.html" class="list-group-item list-group-item-action> 8.什麼是 localStorage ？(事件)</a>
+                    <a href="../8.localStorage/setItemGetItem .html" class="list-group-item list-group-item-action  ">8-2.setItem、getItem 基本操作</a>
+                    <a href="../8.localStorage/JSONparse.html" class="list-group-item list-group-item-action  ">8-3.透過 JSON.parse、JSON.stringify 來編譯資料</a>
+                    <a href="../8.localStorage/dataset.html" class="list-group-item list-group-item-action ">8-4.data-* - 透過 dataset 讀取自訂資料</a>
+                    <a href="../8.localStorage/dataArray.html"class="list-group-item list-group-item-action  list-group-item-info   active   ">8-5.dataset、array 運用</a>
+                    <a href="" class="list-group-item list-group-item-action  ">8-6. splice - 刪除 array 資料</a>
+                    <a href="" class="list-group-item list-group-item-action  ">8-7.localStorage 作業介紹</a>
+                    <a href="" class="list-group-item list-group-item-action ">8-8.localStorage 作業講解</a>
+                  
+                  
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1 class="text-info ">8-5.dataset、array 運用</h1>
+                <h5 class="text-secondary mt-3">在html 裡面自定屬性標籤 <kbd>data-</kbd>字樣是必備,-後面接自訂屬性名稱</h5>
+                <h5 class="text-secondary mt-3">1.在html裡面寫ul,背景黑色,不在html寫內容,用js的array陣列把內容寫進去</h5>
+                <h5 class="text-secondary mt-3">1.用js的陣列寫入兩個農夫:分別為卡斯柏,查理,並依序的加入<kbd>data-num="0",data-num="1"</kbd>  </h5>
+              
+                
+
+                <ul class="mt-5 list" style="background-color: black;padding: 50px;">
+                  
+                </ul>
+
+            
+                
+                <div style="width:800px;background-color:rgb(247, 233, 233);padding: 10px;margin-top: 10px;margin-top: 15px;">
+                    <code>
+                        var country = [ <br>
+                        {<br>
+                          farmer:'卡斯伯'<br>
+                        }<br>
+                        ,{<br>
+                          farmer:'查理'<br>
+                        }<br>
+                      ]<br>
+                      var list = document.querySelector('.list');<br>
+                      
+                      //更新農場資料<br>
+                      function updateList(){<br>
+                        var str = '';<br>
+                        var len = country.length;<br>
+                        for(var i = 0;len>i;i++){<br>
+                          str+='< li data-num="'+i+'">'+country[i].farmer+'< / li >'<br>
+                        }<br>
+                        list.innerHTML = str;<br>
+                      }<br>
+                      updateList();<br>
+                    </code>
+                </div>
+               
+                <h5 class="text-secondary mt-5">2.現在要寫,點擊哪個li就跳出彈跳視窗說明現在選擇的農夫是哪一位</h5>
+                <h5 class="text-secondary mt-3">.如果是用 <kbd>querySelector</kbd> 會發現只能選到第一筆的li,無法選到第二筆第三筆</h5>
+                
+               
+                
+                <div style="width:800px;background-color:rgb(247, 233, 233);padding: 10px;margin-top: 10px;margin-top: 15px;">
+                    <code>
+                        var listLI = document.querySelector('.list li');<br>
+                       listLI.addEventListener('click',function()<br>
+                       {alert('test');}<br>
+                       )<br>
+                     
+                    </code>
+                </div>
+                <h5 class="text-secondary mt-5">3.利用 <kbd>e.target</kbd> 捕獲節點和 <kbd>nodeName</kbd> 節點來撰寫js</h5>
+                <h5 class="text-danger mt-3">*使用 DOM .nodeName 屬性時兩條須遵守的規則
+
+                    1. HTML 元素的節點名稱始終為大寫，即使它們是使用小寫字符顯式創建的。
+                    
+                    <html> 將導致 a .nodeName === "HTML"
+                    
+                    2. XML 元素的節點名稱始終採用原始大小寫，如創建時所指定的那樣。
+                    
+                    <data> 將導致 a .nodeName === "data"，<DATA> 將導致 a .nodeName === "DATA"。
+                    
+                    因此創建時是用小寫，但取得 nodeName 的時候標籤會以大寫顯示</h5>
+                
+                    <div style="width:800px;background-color:rgb(247, 233, 233);padding: 10px;margin-top: 10px;margin-top: 15px;">
+                        <code>
+                            function checkList(e){ <br>
+                                var num = e.target.dataset.num; <br>
+                               
+                                if(e.target.nodeName !== 'LI'){return}; <br>
+                                alert('你選擇的農夫是'+country[num].farmer) <br>
+                                
+                                } <br>
+                                
+                                
+                                
+                                list.addEventListener('click',checkList,false); <br>
+                         
+                        </code>
+                    </div>
+               
+                    <script>
+                        (function($) {
+
+var ost = 0;
+
+$(window).scroll(function() {
+  var cOst = $(this).scrollTop();
+
+  if(cOst > ost) {
+     $('header').addClass('fixed').removeClass('default');
+  }
+  else {
+     $('header').addClass('default').removeClass('fixed');
+  }
+
+  ost = cOst;
+});
+
+})(jQuery);
+
+                      </script>
+
+
+
+            
+</body>
+
+</html>
