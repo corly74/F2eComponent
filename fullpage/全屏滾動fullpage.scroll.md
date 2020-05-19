@@ -10,4 +10,4 @@ _IE瀏覽器不支持該語法 會跳閃_
 
 <h3>3.全屏滾動js套件</h3>
 [套件](https://alvarotrigo.com/fullPage/zh/)
--[]IE可用
+- [ ] IE可用
