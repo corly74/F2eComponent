@@ -20,3 +20,12 @@ _IE瀏覽器不支持該語法 會跳閃_
 [中文說明](https://www.dowebok.com/150.html) <br>
 [展示](https://www.dowebok.com/demo/150/) <br>
 * 還沒測試過 <br>
+
+
+<h3>5.全屏滾動codepen sample</h3>
+[展示](https://codepen.io/lauritzz77/pen/LejyNV) <br>
+* 還沒測試過 <br>
+
+<h3>6.全屏滾動codepen sample2</h3>
+[展示](https://codepen.io/marianarlt/pen/WjGeMM) <br>
+* 還沒測試過 <br>
