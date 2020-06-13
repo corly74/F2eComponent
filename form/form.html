@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Call to Action -->
+  <section class="call-to-action text-white text-center mb-3">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto wow slideUp">
+                <h2 class="mb-4">心動了嗎？請留下您的資料，我們會立即派專人與您連絡！</h2>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <div class="form-row">
+                    <div class="col-12">
+                        <a class="btn btn-block btn-lg btn-success text-size-h1" target="_blank" data-ga-label="bottom-contact-us" data-toggle="collapse" href="#collapseContactUs" onclick="scrollToPos('contact-us');gatag('bottom', 'click', 'bottom-contact-us')">聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact us form -->
+<section class="contact-us text-white text-center bg-success" id="contact-us">
+    <div class="container-fluid collapse" id="collapseContactUs">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 mx-auto wow fadeInUp text-left text-left text-white py-5 px-3">
+
+                <form id="contactUsForm" data-ga-label="submit-contact-us">
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="contactUsName" class="h4">您的姓名</label>
+                                <input type="text" class="form-control text-white" id="name" name="name" aria-describedby="nameHelp" placeholder="請填入您的姓名">
+                                <!-- <small id="nameHelp" class="form-text text-muted">請填入您的姓名</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="contactUsMobile" class="h4">聯絡手機</label>
+                                <input type="text" class="form-control text-white" id="mobile" name="mobile" aria-describedby="mobileHelp" placeholder="請填入您的聯絡手機">
+                                <!-- <small id="mobileHelp" class="form-text text-muted">請填入您的聯絡手機</small> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="contactUsEmail" class="h4">電子郵箱</label>
+                                <input type="email" class="form-control text-white" id="email" name="email" aria-describedby="emailHelp" placeholder="請填入您的電郵信箱">
+                                <!-- <small id="emailHelp" class="form-text text-muted">請填入您的電郵信箱</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactUsCourses" class="h4">您想瞭解的課程</label>
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="toefl" name="toefl">
+                                <label class="custom-control-label" for="toefl">css</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="ielts" name="ielts" checked>
+                                <label class="custom-control-label" for="ielts">html</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sat" name="sat">
+                                <label class="custom-control-label" for="sat">javascript</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="toeic" name="toeic">
+                                <label class="custom-control-label" for="toeic">php</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="be" name="bEnglish">
+                                    <label class="custom-control-label" for="be">c+</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gm" name="gm">
+                                <label class="custom-control-label" for="gm">python</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gre" name="gre">
+                                <label class="custom-control-label" for="gre">jquery</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gmat" name="gmat">
+                                <label class="custom-control-label" for="gmat">Vue</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="aw" name="aw">
+                                <label class="custom-control-label" for="aw">Agular</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="conversation" name="conversation">
+                                <label class="custom-control-label" for="conversation">React</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="preMBA" name="preMBA">
+                                <label class="custom-control-label" for="preMBA">Bootstrap</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="preMa" name="preMa">
+                                <label class="custom-control-label" for="preMa">Tailwind</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="bed" name="bEditing">
+                                <label class="custom-control-label" for="bed">Gulp</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="ip" name="ip">
+                                <label class="custom-control-label" for="ip">Sass</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <label for="contactUsCourses" class="h4">您想知道的內容</label>
+                            <div class="form-group">
+                                <textarea class="form-control text-white" id="comment" name="comment" rows="3" placeholder="請留下您的意見"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center mt-4">
+                        <input type="hidden" id="fpid" name="fpid" value="">
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">
+                        <button type="submit" class="btn btn-light text-size-h1 text-whygo-blue">送出資料</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
