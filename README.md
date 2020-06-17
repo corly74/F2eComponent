@@ -31,3 +31,6 @@
 <h3>5.網頁Top按鈕 (網頁回到頂端)，純 CSS+jQuery 免圖片</h3>
 [解說頁](https://ezbox.idv.tw/131/back-to-top-button-without-images/)<br>
 
+<h3>6.google map RWD</h3>
+[解說頁](https://4xsc.com/google-map-rwd/)<br>
+
