@@ -41,4 +41,4 @@
 [解說頁](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon)<br>
 
 <h3>10.Bootstrap 4 表單驗證外掛</h3>
-[解說頁](https://bootstrap-validate.js.org/installation.html)<br>
+[解說頁](https://github.com/nghuuphuoc/bootstrapvalidator/blob/master/README.md)<br>
