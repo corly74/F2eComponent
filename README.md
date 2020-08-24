@@ -37,5 +37,8 @@
 <h3>8.CSS 箭頭</h3>
 [解說頁](http://www.cssarrowplease.com/)<br>
 
-<h3>9.Live Demo: Bootstrap 4 Accordion with Plus Minus Icons/h3>
+<h3>9.Live Demo: Bootstrap 4 Accordion with Plus Minus Icons</h3>
 [解說頁](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon)<br>
+
+<h3>10.Bootstrap 4 表單驗證外掛</h3>
+[解說頁](https://bootstrap-validate.js.org/installation.html)<br>
