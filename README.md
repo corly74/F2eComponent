@@ -45,3 +45,7 @@
 
 <h3>10.Bootstrap 4 表單驗證示範操作</h3>
 [解說頁](https://codepen.io/GuanHan/pen/VrePXm)<br>
+
+
+<h3>11.Bootstrap 4 表單驗證生日 placeholder出現文字</h3>
+[解說頁](https://stackoverflow.com/questions/18146350/how-do-i-simulate-placeholder-functionality-on-input-date-field?answertab=active#tab-top)<br>
