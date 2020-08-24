@@ -40,5 +40,8 @@
 <h3>9.Live Demo: Bootstrap 4 Accordion with Plus Minus Icons</h3>
 [解說頁](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon)<br>
 
-<h3>10.Bootstrap 4 表單驗證外掛</h3>
+<h3>10.Bootstrap 4 表單驗證外掛-停止更新</h3>
 [解說頁](https://github.com/nghuuphuoc/bootstrapvalidator/blob/master/README.md)<br>
+
+<h3>10.Bootstrap 4 表單驗證示範操作</h3>
+[解說頁](https://codepen.io/GuanHan/pen/VrePXm)<br>
