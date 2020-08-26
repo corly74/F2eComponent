@@ -49,3 +49,6 @@
 
 <h3>11.Bootstrap 4 表單驗證生日 placeholder出現文字</h3>
 [解說頁](https://stackoverflow.com/questions/18146350/how-do-i-simulate-placeholder-functionality-on-input-date-field?answertab=active#tab-top)<br>
+
+<h3>12.jQuery Validate表單驗證插件</h3>
+[解說頁](https://jqueryvalidation.org/)<br>
