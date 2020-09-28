@@ -52,3 +52,6 @@
 
 <h3>12.jQuery Validate表單驗證插件</h3>
 [解說頁](https://jqueryvalidation.org/)<br>
+
+<h3>13.input type樣式寫法</h3>
+[解說頁](http://www.2my4edge.com/2015/12/google-material-design-style-input.html)<br>
