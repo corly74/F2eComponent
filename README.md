@@ -58,3 +58,9 @@
 
 <h3>14.Popup/Modal Windows without JavaScript樣式寫法</h3>
 [解說頁](https://codepen.io/imprakash/details/GgNMXO)<br>
+
+<h3>15.怎麼把「滾動條」隱藏？</h3>
+[解說頁](https://ithelp.ithome.com.tw/articles/10197593)<br>
+
+<h3>16.阻止點擊a時頁面彈跳到頂部How do I stop a web page from scrolling to the top </h3>
+[解說頁](https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t)<br>
