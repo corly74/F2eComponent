@@ -64,3 +64,9 @@
 
 <h3>16.阻止點擊a時頁面彈跳到頂部How do I stop a web page from scrolling to the top </h3>
 [解說頁](https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t)<br>
+
+
+<h3>17.畫面隨滑鼠滾動飛入Animate on scroll library</h3>
+[解說頁](https://stackoverflow.com/questions/26694385/fade-in-on-scroll-down-fade-out-on-scroll-up-based-on-element-position-in-win)<br>
+[libar](https://michalsnik.github.io/aos/)<br>
+[心得分享](https://ktamd.blogspot.com/2019/03/cssaos-animate-on-scroll.html)<br>
