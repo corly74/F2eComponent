@@ -68,5 +68,16 @@
 
 <h3>17.畫面隨滑鼠滾動飛入Animate on scroll library</h3>
 [解說頁](https://stackoverflow.com/questions/26694385/fade-in-on-scroll-down-fade-out-on-scroll-up-based-on-element-position-in-win)<br>
-[libar](https://michalsnik.github.io/aos/)<br>
+[libary](https://michalsnik.github.io/aos/)<br>
 [心得分享](https://ktamd.blogspot.com/2019/03/cssaos-animate-on-scroll.html)<br>
+
+<h3>18.畫面隨滑鼠滾動飛入Slide In when scroll</h3>
+[解說頁1](https://pjchender.github.io/2017/09/26/js30-day13-slide-in-on-scroll/)<br>
+[解說頁2](https://codepen.io/tkn98/pen/LBxjab)<br>
+[解說頁3](https://css-tricks.com/slide-in-as-you-scroll-down-boxes/)<br>
+[框架](https://semantic-ui.com/behaviors/visibility.html#/examples)<br>
+
+<h3>19.CSS UI框架</h3>
+[Material Design Lite](https://getmdl.io/index.html)<br>
+[SemanticUI](https://semantic-ui.com/)<br>
+[tailwindcss](https://tailwindcss.com/)<br>
