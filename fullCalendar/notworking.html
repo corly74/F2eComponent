@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- bootstrap-->
+
+	<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"  rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"  rel="stylesheet">
+	<link href=" https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.6/fullcalendar.min.css"  rel="stylesheet">
+  	<link href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"  rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.6/fullcalendar.min.js"></script>
+
+
+</head>
+
+<script>
+
+	document.addEventListener('DOMContentLoaded', function() {
+	  var calendarEl = document.getElementById('calendar');
+  
+	  var calendar = new FullCalendar.Calendar(calendarEl, {
+		headerToolbar: {
+		  left: 'prev,next today',
+		  center: 'title',
+		  right: 'dayGridMonth,timeGridWeek,timeGridDay'
+		},
+		defaultView: 'month',
+		initialDate: '2020-09-12',
+		navLinks: true, // can click day/week names to navigate views
+		selectable: true,
+		selectMirror: true,
+		select: function(arg) {
+		  var title = prompt('Event Title:');
+		  if (title) {
+			calendar.addEvent({
+			  title: title,
+			  start: arg.start,
+			  end: arg.end,
+			  allDay: arg.allDay
+			})
+		  }
+		  calendar.unselect()
+		},
+		eventClick: function(arg) {
+		  if (confirm('Are you sure you want to delete this event?')) {
+			arg.event.remove()
+		  }
+		},
+		editable: true,
+		dayMaxEvents: true, // allow "more" link when too many events
+		events: [
+		  {
+			title: 'All Day Event',
+			start: '2020-09-01'
+		  },
+		  {
+			title: 'Long Event',
+			start: '2020-09-07',
+			end: '2020-09-10'
+		  },
+		  {
+			groupId: 999,
+			title: 'Repeating Event',
+			start: '2020-09-09T16:00:00'
+		  },
+		  {
+			groupId: 999,
+			title: 'Repeating Event',
+			start: '2020-09-16T16:00:00'
+		  },
+		  {
+			title: 'Conference',
+			start: '2020-09-11',
+			end: '2020-09-13'
+		  },
+		  {
+			title: 'Meeting',
+			start: '2020-09-12T10:30:00',
+			end: '2020-09-12T12:30:00'
+		  },
+		  {
+			title: 'Lunch',
+			start: '2020-09-12T12:00:00'
+		  },
+		  {
+			title: 'Meeting',
+			start: '2020-09-12T14:30:00'
+		  },
+		  {
+			title: 'Happy Hour',
+			start: '2020-09-12T17:30:00'
+		  },
+		  {
+			title: 'Dinner',
+			start: '2020-09-12T20:00:00'
+		  },
+		  {
+			title: 'Birthday Party',
+			start: '2020-09-13T07:00:00'
+		  },
+		  {
+			title: 'Click for Google',
+			url: 'http://google.com/',
+			start: '2020-09-28'
+		  }
+		]
+	  });
+  
+	  calendar.render();
+	});
+  
+  </script>
+
+
+<style>
+	.label {
+		cursor: pointer;
+		color: rgba(255, 255, 255, 0.8);
+		background-color: #b5b6b6;
+		box-sizing: border-box;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 56px;
+		transition: color 0.2s ease;
+		width: 100%;
+	}
+
+
+
+
+	.list-group .active {
+		z-index: 2;
+		color: #007bff;
+		background-color: #ffffff;
+		border-bottom: 5px solid #007bff;
+		border-left: white;
+		border-top: white;
+		border-right: white;
+
+	}
+
+	.menu-flex {
+		flex-direction: row;
+	}
+
+	.list-group-item {
+		border: 1px solid rgba(0, 0, 0, 0);
+	}
+
+	h1 {
+		font-size: 26px;
+		background: #b5b6b6;
+		color: white;
+		padding: 40px 0 100px 20%;
+		margin-bottom: 50px;
+	}
+
+	.tab-wrap {
+		margin-top: -106px;
+	}
+
+	 /* .fc-col-header {
+    max-width: 1024px !important;
+   
+  } */
+
+   #calendar  {
+    height: 883px !important;
+  } 
+
+</style>
+
+<body>
+	<!-- TAB CONTROLLERS -->
+
+	<div class="">
+		<h1>Material Design CSS Only Tabs</h1>
+		<div class="tab-wrap container ">
+			<div class="list-group menu-flex" id="myList" role="tablist">
+
+				<a class="list-group-item list-group-item-action active label  rounded-0 " data-toggle="tab"
+					href="#home" role="tab">Home
+				</a>
+
+
+				<a class="list-group-item list-group-item-action label " data-toggle="tab" href="#profile"
+					role="tab" >Profile</a>
+				<a class="list-group-item list-group-item-action label " data-toggle="tab" href="#messages"
+					role="tab" >Messages</a>
+				<a class="list-group-item list-group-item-action label  rounded-0" data-toggle="tab" href="#settings"
+					role="tab">Settings</a>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane active mt-2 " id="home" role="tabpanel">
+					Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation
+					fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate
+					reprehenderit occaecat
+					nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip
+					nostrud sunt incididunt
+					consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do
+					aliquip veniam minim.</div>
+
+				<div class="tab-pane mt-2" id="profile" role="tabpanel">
+
+					<div id='calendar'></div>
+
+
+				</div>
+
+				<div class="tab-pane mt-2" id="messages" role="tabpanel">
+
+					Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum
+					voluptate. Irure Lorem et laboris nostrud
+					amet cupidatat cupidatat anim do ut velit mollit consequat enim tempor. Consectetur est minim
+					nostrud
+					nostrud consectetur irure labore
+					voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa
+					sit
+					eiusmod deserunt. Consectetur et
+					fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.
+
+				</div>
+
+				<div class="tab-pane " id="settings" role="tabpanel">
+					Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit
+					nostrud ut
+					dolore nisi officia magna sit
+					occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute
+					occaecat ea aliquip sunt amet.
+					Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco
+					nisi
+					amet qui aute irure eu.
+					Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in
+					irure.
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+<script>
+ $(document).ready(function() {
+    $('#myList').tabs({
+        activate: function(event, ui) {
+            if( $('#calendar').is(':visible')){
+                $('#calendar').fullCalendar('render');
+            }
+            else{
+                //change 2000 for whatever works for you.
+                setTimeout(function(){ $('#calendar').fullCalendar('render');},2000);
+            }
+        }
+    });
+ });
+
+</script>
+
+
+
+
+</html>
