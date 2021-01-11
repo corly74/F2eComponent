@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<style>
+
+.swiper-button-prev{
+
+color: rgb(255, 255, 255,0)
+
+}
+
+.swiper-button-next{
+    color: rgb(255, 255, 255,0)
+}
+.course-section-title{
+    margin-top: 15vh;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.go-to-study:hover{
+    transform:translateX(10px);
+}
+
+.my-learning-cover{
+    max-width:360px;
+    height:206px;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-learning-cover-video{
+    background-color: silver;
+    height: 100%;
+}
+
+.my-learning-cover-exercise{
+    background-color: rgb(175, 202, 212);
+    height: 100%;
+}
+
+
+.my-learning-cover-book{
+
+    background-color: thistle;
+    height: 100%;
+}
+/* 影片button */
+
+.button-next{
+    position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+background-color: white;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+
+  /* 調整pre btn位置 */
+  right: 409px;
+    top: 310px;
+}
+
+.button-next:hover{
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+
+
+
+  .button-next:before{
+    position: absolute;
+  
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+      content: "\f054";
+      margin-left:7px;
+      margin-top: 7px;
+     font-size: 24px;
+    color:#007aff;
+    
+  }
+
+
+  .button-prev{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  
+    background-color: white;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+
+    /* 調整pre btn位置 */
+    left: 415px;
+    top: 310px;
+  }
+
+
+
+
+
+  
+  .button-prev:hover{
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+
+ 
+  .button-prev:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+      content: "\f053";
+      margin-left: 3px;
+      margin-top: 8px;
+     font-size: 24px;
+    color:#007aff;
+    
+
+  }
+
+  
+
+  .my-learning-cover-play-icon{
+  margin-left: 17px;
+  margin-top: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .my-learning-cover-play-icon:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+      content: "\f04b";
+      margin-left: 15px;
+      margin-top: 5px;
+     font-size: 24px;
+    color:#000000;
+    
+
+  }
+
+  .my-learning-cover-paper-icon{
+    margin-left: 17px;
+    margin-top: 80px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+  }
+
+
+  .my-learning-cover-paper-icon:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+      content: "\f15c";
+      margin-left: 15px;
+      margin-top: 5px;
+     font-size: 24px;
+    color:#000000;
+    
+
+  }
+
+
+  .my-learning-cover-book-icon{
+    margin-left: 17px;
+    margin-top: 80px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+
+  }
+
+  .my-learning-cover-book-icon:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+      content: "\f518";
+      margin-left: 15px;
+      margin-top: 7px;
+     font-size: 24px;
+    color:#000000;
+  }
+
+  /* 調整pagination位置 */
+
+  .swiper-container{
+    position:inherit !important;
+}
+
+.swiper-container{
+    width: 95%;
+}
+
+
+  .swiper-container-horizontal>.swiper-pagination-bullets{
+     top: 440px;
+  }
+
+  .next-course-title{
+      font-size: 36px;
+      color: rgb(54, 54, 54);
+  }
+
+  .next-course-subtitle{
+    font-size: 28px;
+    color: rgb(54, 54, 54);
+  }
+
+  .course-intro-font{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .comming-soon-position{
+    margin-top: 12vh;
+  }
+
+
+</style>
+
+<body>
+    <div class="container d-flex justify-content-between my-5">
+        <h4 class="text-secondary course-section-title">Let's start learning,<span>John Q.Public</span> </h4>
+        <a href="" class="text-decoration-none text-body course-section-title go-to-study ">
+            <h5 class=" ">My learning ></h5>
+        </a>
+    </div>
+
+    <div class="container">
+
+    <div class="swiper-container py-5 " style="">
+
+        <div class="swiper-wrapper" style="height: auto;">
+            <div class="swiper-slide d-flex   my-learning-cover shadow-sm">
+
+                <div class="col-4 my-learning-cover-video" style="">
+
+                    <div class="my-learning-cover-play-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Grammar-Reported Speech</p>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="swiper-slide d-flex my-learning-cover shadow-sm">
+
+
+                <div class="col-4 my-learning-cover-exercise" style="">
+
+                    <div class="my-learning-cover-paper-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Basic Vocabulary Listv.1-Exercise 1.4</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide d-flex my-learning-cover shadow-sm">
+
+                <div class="col-4 my-learning-cover-book" style="">
+
+                    <div class="my-learning-cover-book-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Basic Grammar Past - was/were / Theory</p>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide d-flex my-learning-cover shadow-sm">
+
+
+                <div class="col-4 my-learning-cover-exercise" style="">
+
+                    <div class="my-learning-cover-paper-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Basic Vocabulary Listv.1-Exercise 1.4</p>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide d-flex   my-learning-cover shadow-sm">
+
+                <div class="col-4 my-learning-cover-video" style="">
+
+                    <div class="my-learning-cover-play-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Grammar-Reported Speech</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper-slide d-flex my-learning-cover shadow-sm">
+
+                <div class="col-4 my-learning-cover-book" style="">
+
+                    <div class="my-learning-cover-book-icon"></div>
+
+                </div>
+
+
+                <div class="col-8">
+                    <p class=""><small>IELTS BEGINNER</small> </p>
+
+                    <p>Basic Grammar Past - was/were / Theory</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next button-next" style=""></div>
+        <div class="swiper-button-prev button-prev"></div>
+    </div>
+</div>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: 90000,
+                delay: 55000,
+                speed: 55000,
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+
+                    }
+
+
+                },
+
+
+                freeMode: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+
+
+            });
+
+            $(".swiper-container").hover(function () {
+                (this).swiper.autoplay.stop();
+            }, function () {
+                (this).swiper.autoplay.start();
+            });
+        });
+    </script>
+</body>
+
+</html>
