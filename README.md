@@ -91,5 +91,9 @@
 ](https://codepen.io/ricardoo-garcia/pen/GRJjjVV)<br>
 [UI Bootstrap Tooltip 修改色系](https://kanchengzxdfgcv.blogspot.com/2019/03/ui-bootstrap-tooltip-bootstrap-tooltip.html)<br>
 
-<h3>21.Bootstrap 彈跳視窗 With Animate.css</h3>
+<h3>22.Bootstrap 彈跳視窗 With Animate.css</h3>
 [Bootstrap Modal Animation With Animate.css](https://codepen.io/nhembram/pen/PzyYLL)<br>
+
+<h3>23.Bootstrap 彈跳視窗 With Velocity.js animation</h3>
+[CodePen Home
+Bootstrap Modal and popover with Velocity.js animation](https://codepen.io/macsupport/pen/OPwvwx)<br>
