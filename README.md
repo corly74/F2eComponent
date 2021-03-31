@@ -18,7 +18,12 @@
 [switchButton](https://corly74.github.io/F2eComponent/switchButton/switchButton.html)
 
 <h3>4.金流頁</h3>
-<h4>不用寫js的switch</h4>
+<h4>click button open next tab - js</h4>
+<h4>click read more and open article / with gradual white </h4>
+<h4>stop go to next tab without select checkbox and pop out alert  / after select checkbox close alert  </h4>
+<h4>click payment methods open tick and change payment pic (credit card/store pay/line pay /appale pay) ,defult pic al  grey color  </h4>
+<h4>選擇不同的invoice方式,下拉選單跳出不一樣對應選擇</h4>
+
 [金流頁](https://corly74.github.io/F2eComponent/shopFlow/shopFlow.html)
 
 <h1>前端教學資源</h1>
