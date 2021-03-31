@@ -19,7 +19,7 @@
 
 <h3>4.金流頁</h3>
 [金流頁](https://corly74.github.io/F2eComponent/shopFlow/shopFlow.html)
-<h4>click button open next tab - js</h4>
+<h4>1.click button open next tab - JS</h4>
 <h4>click read more and open article / with gradual white </h4>
 <h4>stop go to next tab without select checkbox and pop out alert  / after select checkbox close alert  </h4>
 <h4>click payment methods open tick and change payment pic (credit card/store pay/line pay /appale pay) ,defult pic al  grey color  </h4>
