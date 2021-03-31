@@ -2,15 +2,26 @@
 
 <h1>前端快速組件Component</h1>
 
+
 <h3>1.card-carousel</h3>
 <h4>卡片輪播</h4>
 [卡片輪播效果頁](https://corly74.github.io/F2eComponent/card-carousel/)
 
 
+<h3>2.card-carousel</h3>
+<h4>卡片輪播</h4>
+[卡片輪播效果頁](https://corly74.github.io/F2eComponent/card-carousel/)
 
-<h3>2.Switch button</h3>
+
+<h3>3.Switch button</h3>
 <h4>不用寫js的switch</h4>
 [switchButton](https://corly74.github.io/F2eComponent/switchButton/switchButton.html)
+
+<h3>4.金流頁</h3>
+<h4>不用寫js的switch</h4>
+[金流頁](https://corly74.github.io/F2eComponent/shopFlow/shopFlow.html)
+
+<h1>前端教學資源</h1>
 
 
 <h3>3.hear 下拉隱藏/顯示js </h3>
