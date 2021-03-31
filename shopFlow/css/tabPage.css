@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.shop-tab-mt{
+  margin-top: -4px;
+}
+.course-section-1 {
+  margin-top: 0px;
+}
+
+.h1-title {
+  font-size: 26px;
+  background: #b5b6b6;
+  color: white;
+  padding: 60px 0 100px 20%;
+  margin-bottom: 50px;
+}
+
+.tab-wrap {
+  margin-top: -106px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+@media screen and (max-width: 800px) {
+  .tab-wrap .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
+
+.tab-content {
+  margin-top: 50px;
+}
+
+.tab-width {
+  width: 20%;
+}
+
+.label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #b5b6b6;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 56px;
+  transition: color 0.2s ease;
+  width: 100%;
+}
+
+.my-learning-tabs {
+  width: 100vw;
+  height: auto;
+  background-color: lightgray;
+}
+
+.my-learning-title {
+  font-size: 26px;
+  background: #b5b6b6;
+  color: white;
+  padding: 40px 0 100px 20%;
+  margin-bottom: 50px;
+}
+
+label, p, a, h1, div {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    padding: 40px 0 90px 10%;
+  }
+}
+.list-group .active {
+  z-index: 2;
+  color: #007bff;
+  background-color: white;
+  border-bottom: 5px solid #007bff;
+  border-left: white;
+  border-top: white;
+  border-right: white;
+}
+
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.menu-flex {
+  flex-direction: row;
+}
