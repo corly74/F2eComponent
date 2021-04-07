@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* personal imformation 個人資料在手機版右上icon隱藏改成左邊出現menu icon點擊滑出 */
+@media (max-width: 576px) {
+  .mobile-menu {
+    margin-left: -297px;
+    margin-top: 73px;
+  }
+}
+@media (max-width: 425px) {
+  .mobile-menu {
+    margin-left: -200px;
+    margin-top: 73px;
+  }
+}
+@media (max-width: 375px) {
+  .mobile-menu {
+    margin-top: 95px;
+  }
+}
+
+/* 防止768px版本 右邊personal menu打開撐開header */
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+  float: none;
+}
+
+.mobile-slide-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: inherit;
+  white-space: nowrap;
+  /* background-color: transparent; */
+  border: 0;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+.menu-position {
+  margin-right: 120px;
+  letter-spacing: 1px;
+}
+@media (max-width: 425px) {
+  .menu-position {
+    transform: translateX(-5%);
+    margin-right: -10px;
+    margin-top: 65px;
+  }
+}
+@media (max-width: 375px) {
+  .menu-position {
+    transform: translateX(-23%);
+    margin-right: -40px;
+  }
+}
+@media (max-width: 320px) {
+  .menu-position {
+    transform: translateX(-11%);
+    margin-right: -5px;
+  }
+}
+
+.mobile-menu-text {
+  font-size: 14px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+.gray-text {
+  color: #6c757d;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+.dropdown-menu {
+  left: -84px !important;
+}
+
+.mobile-visitor-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #6c757d;
+}
+
+.face-icon {
+  margin-left: 0.6rem;
+}
+
+.imfomation-menu {
+  padding-right: 30px;
+  padding-left: 15px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
