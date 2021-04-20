@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/fontawesome.all.min.css" rel="stylesheet">
+    <link href="../styles/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="../scripts/jquery-3.3.1.min.js"></script>
+
+    <script src="../scripts/popper.min.js"></script>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+
+    <!--custimized css  -->
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/body.css" rel="stylesheet">
+    <link href="../css/rightMenu.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/teacher.css" rel="stylesheet">
+    <!-- <link href="./css/ieltonlineHomePage.css" rel="stylesheet">
+    <link href="./css/ielts_login4.css" rel="stylesheet"> -->
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- Hover.css v2.1.1 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet" />
+
+
+
+    <!-- Animate.css v3.5.2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+    <!-- Headroom.js v0.9.4 -->
+
+    <script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+
+    <!-- muti menu -->
+    <script src="../styles/jquery.cookcodesmenu.js"></script>
+    <!-- google字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Noto+Sans+TC:wght@100&family=Oswald&family=Prompt:wght@500&family=Rubik&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="modal fade" id="loadingModal" data-backdrop="static">
+        <div class="modal-dialog modal-sm text-center modal-dialog-centered" style="color:#FFF; max-width:100px;"><i
+                class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div>
+    </div>
+    <header class="default shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-header  navbar-position headroom" id="header_block">
+            <div class="container-fluid">
+
+                <h1 class="logo  img-fluid">
+                    <a href="http://newserver:9798/">Ielts Online</a>
+                </h1>
+
+
+                <div class="   menu-position pt-4 ml-auto  " id="navbarSupportedContent" style="">
+                    <ul class=" d-flex flex-row  ">
+
+                        <!-- 桌機menu -->
+
+                        <div class=" navbar-collapse ml-auto" id="navbarNav">
+                            <ul class="navbar-nav">
+
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><i
+                                            class="fas fa-shopping-cart fa-lg text-secondary mx-1 destop-cart-icon-mobile-posision"></i></a>
+                                </li>
+
+
+                                <a href="javascript:;"
+                                    class="btn btn-outline-secondary destop-cart-login-posision login-width"
+                                    role="button" id="loginswitch" data-target="#list-login">
+                                    Login</a>
+
+
+
+
+                                <a href="javascript:;" class="btn btn-secondary destop-cart-login-posision mx-1"
+                                    role="button" data-target="#list-newaccount" id="newaccountswitch"> Sign
+                                    up</a>
+                            </ul>
+                        </div>
+
+
+
+
+
+
+
+                    </ul>
+                </div>
+
+
+    </header>
+
+    <div class="container-fluid  " style="position: relative; padding-bottom: 300px;">
+
+        <div class="row mb-5">
+            <div class="col-2">
+
+                <div class="card border border-body mt-5">
+
+                    <div class="card-header content-text text-center text-secondary">
+                        Course
+                    </div>
+
+
+                    <div class="form-check ml-3 mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="courseIelts">
+                        <label class="form-check-label content-text text-secondary" for="courseIelts">
+                            IELTS
+                        </label>
+
+
+
+                    </div>
+                    <div class="form-check ml-3">
+                        <input class="form-check-input" type="checkbox" value="" id="courseToefl">
+                        <label class="form-check-label content-text text-secondary" for="courseToefl">
+                            TOEFL
+                        </label>
+
+                    </div>
+                    <div class="form-check ml-3">
+                        <input class="form-check-input" type="checkbox" value="" id="courseSat">
+                        <label class="form-check-label content-text text-secondary" for="courseSat">
+                            SAT
+                        </label>
+                    </div>
+                    <div class="card-header content-text text-center text-secondary mt-4 border-top">
+                        Levels
+                    </div>
+
+                    <div class="form-check ml-3 mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="levelExecutive">
+                        <label class="form-check-label content-text text-secondary" for="levelExecutive">
+                            Executive
+                        </label>
+                    </div>
+
+                    <div class="form-check ml-3 ">
+                        <input class="form-check-input" type="checkbox" value="" id="levelSenior">
+                        <label class="form-check-label content-text text-secondary" for="levelSenior">
+                            Senior
+                        </label>
+                    </div>
+
+                    <div class="form-check ml-3 ">
+                        <input class="form-check-input" type="checkbox" value="" id="levelProfessional">
+                        <label class="form-check-label content-text text-secondary" for="levelProfessional">
+                            Professional
+                        </label>
+                    </div>
+
+                    <div class="card-header content-text text-center text-secondary mt-4 border-top">
+                        Your availability
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3 mb-3">
+                        <div class="d-flex flex-column  avaibeTime">
+                            <i class="fas fa-sun fa-2x text-lightgray ml-2 "></i>
+                            <span class="content-text font-10 text-lightgray mt-1 freeTime1 ">am8 - 12</span>
+                        </div>
+
+                        <div class="d-flex flex-column ml-2 avaibeTime2">
+                            <i class="fas fa-coffee fa-2x text-lightgray ml-1"></i>
+                            <span class="content-text font-10 text-lightgray mt-1 freeTime2">pm1 - 6</span>
+                        </div>
+
+                        <div class="d-flex flex-column ml-2 avaibeTime3">
+                            <i class="fas fa-moon fa-2x text-lightgray ml-2"></i>
+                            <span class="content-text font-10 text-lightgray mt-1 freeTime3">pm7 - 10</span>
+                        </div>
+
+                        <div class="d-flex flex-column ml-2 avaibeTime4">
+                            <i class="far fa-laugh fa-2x text-lightgray ml-2"></i>
+                            <span class="content-text font-10 text-lightgray mt-1 freeTime4">weekend</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-7 ml-n3" >
+
+                <div class="card mt-5 teacher-show mouse-show example" data-div="show1" test-div="show1">
+
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="../img/ancient-architecture-big-326807-160x160.jpg" class="circle-pic "
+                                alt="...">
+                        </div>
+                        <div class="col-9 ml-2">
+                            <div class="d-flex ">
+                                <p class="content-text mt-3 h5">Steven</p>
+                                <img src="../img/canada24.png" class="ml-2 mt-3 h-100 ">
+                                <span
+                                    class="badge badge-primary h-100 ml-1 mt-bage content-text spacing-1">Native</span>
+                            </div>
+
+                            <div class="d-flex">
+                              
+                                    <i class="fas fa-user-alt text-dark mt-people"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">20</span> active students </p>
+                                   
+                                    <i class="fas fa-book text-dark mt-people ml-1"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">351</span> active students </p>
+                                    
+                             
+                              
+                            </div>
+                            <div class="d-flex justify-content-between ml-n3 ">
+                               
+
+                                <p class="content-text text-secondary col-9 align-start-end" style="">
+                                
+                                
+                                 30 years of teaching English Learning English is about the importance of understanding. Parrots can be taught words, computers can be programmed to manage grammar. 
+                                 If we are honest neither of them speak English. There is so much more than learning words and grammar to any
+                                </p>
+                                
+                                <div class="card col-3 border-0 bg-transparent ">
+                                  <p class="text-primary text-center">  <span><i class="fas fa-dollar-sign fa-lg"></i></span><span class="mx-2 h5">5,000</span><span>hour</span></p>
+                                    <a class="btn btn-primary rounded-pill content-text " href="#" role="button">Veiw availability</a>
+
+                                </div>
+
+                              
+                            </div>
+                           
+                        </div>
+                        
+                      
+                    </div>
+
+                </div>
+
+                <div class="card mt-3 teacher-show2 mouse-show"  data-div="show2">
+
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="../img/bath-510544_960_720-160x160.jpg" class="circle-pic "
+                                alt="...">
+                        </div>
+                        <div class="col-9 ml-2">
+                            <div class="d-flex ">
+                                <p class="content-text mt-3 h5">Shad</p>
+                                <img src="../img/united-states.png" class="ml-2 mt-3 h-100 ">
+                                <span
+                                    class="badge badge-primary h-100 ml-1 mt-bage content-text spacing-1">Native</span>
+                            </div>
+
+                            <div class="d-flex">
+                              
+                                    <i class="fas fa-user-alt text-dark mt-people"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">20</span> active students </p>
+                                   
+                                    <i class="fas fa-book text-dark mt-people ml-1"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">351</span> active students </p>
+                                    
+                             
+                              
+                            </div>
+                            <div class="d-flex justify-content-between ml-n3 ">
+                               
+
+                                <p class="content-text text-secondary col-9 align-start-end" style="">
+                                
+                                
+                                 20 years of teaching English Learning English is about the importance of understanding. Parrots can be taught words, computers can be programmed to manage grammar. 
+                                 If we are honest neither of them speak English. There is so much more than learning words and grammar to any
+                                </p>
+                                
+                                <div class="card col-3 border-0 bg-transparent ">
+                                  <p class="text-primary text-center">  <span><i class="fas fa-dollar-sign fa-lg"></i></span><span class="mx-2 h5">3,000</span><span>hour</span></p>
+                                    <a class="btn btn-primary rounded-pill content-text" href="#" role="button">Veiw availability</a>
+
+                                </div>
+
+                              
+                            </div>
+                           
+                        </div>
+                        
+                      
+                    </div>
+
+                </div>
+
+                <div class="card mt-3 teacher-show3 mouse-show" data-div="show3">
+
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="../img/london-1567903__340-160x160.jpg" class="circle-pic "
+                                alt="...">
+                        </div>
+                        <div class="col-9 ml-2">
+                            <div class="d-flex ">
+                                <p class="content-text mt-3 h5">Chris</p>
+                                <img src="../img/australia.png" class="ml-2 mt-3 h-100 ">
+                                <span
+                                    class="badge badge-primary h-100 ml-1 mt-bage content-text spacing-1">Native</span>
+                            </div>
+
+                            <div class="d-flex">
+                              
+                                    <i class="fas fa-user-alt text-dark mt-people"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">20</span> active students </p>
+                                   
+                                    <i class="fas fa-book text-dark mt-people ml-1"></i>
+                                    <p class="content-text text-dark"> 
+                                    <span class="content-text text-dark ml-1">351</span> active students </p>
+                                    
+                             
+                              
+                            </div>
+                            <div class="d-flex justify-content-between ml-n3 ">
+                               
+
+                                <p class="content-text text-secondary col-9 align-start-end" style="">
+                                
+                                
+                                 20 years of teaching English Learning English is about the importance of understanding. Parrots can be taught words, computers can be programmed to manage grammar. 
+                                 If we are honest neither of them speak English. There is so much more than learning words and grammar to any
+                                </p>
+                                
+                                <div class="card col-3 border-0 bg-transparent ">
+                                  <p class="text-primary text-center">  <span><i class="fas fa-dollar-sign fa-lg"></i></span><span class="mx-2 h5">3,000</span><span>hour</span></p>
+                                    <a class="btn btn-primary rounded-pill content-text" href="#" role="button">Veiw availability</a>
+
+                                </div>
+
+                              
+                            </div>
+                           
+                        </div>
+                        
+                      
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-3   mt-5 tab-content" >
+
+                <div class="card mini-schedule show1" style="position: absolute;right:.16vw; top: 30;width: 28rem;" >
+
+
+                    <img src="../img/steven.jpg" style="z-index: 240;" class="w-100">
+                    <a href="#popup1">
+                        <div class="swiper-button-next button-next play-position" style="z-index: 250;"></div>
+                    </a>
+
+
+                    <button type="button"
+                        class="btn btn-primary btn-lg btn-block rounded-0 btn-word btn-word-size "> Free
+                        Preview&#10148;</button>
+
+
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary my-4 rounded-pill btn-word "
+                            style="width: 180px;">Add to
+                            chart
+                        </button>
+
+                    </div>
+
+                    <div class="card-body border-top">
+                       
+
+                        <table class="table table-bordered table-active border-light text-content font-10 ">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="font-10"></th>
+                                <th scope="col" class="font-10">Mon</th>
+                                <th scope="col" class="font-10">Tue</th>
+                                <th scope="col" class="font-10">Wed</th>
+                                <th scope="col" class="font-10">Thu</th>
+                                <th scope="col" class="font-10">Fri</th>
+                                <th scope="col" class="font-10">Sat</th>
+                                <th scope="col" class="font-10">Sun</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >Morning <br> 06 - 12 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td >Afternoon <br> 13 - 18 </td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Evening <br> 18 - 24 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Night <br> 0 - 6 </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                              </tr>
+                             
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="card mini-schedule d-none show2" style="position: absolute;right:.16vw; top: 15vh;width: 28rem;" >
+
+
+                    <img src="../img/Shad.jpg" style="z-index: 240;" class="w-100">
+                    <a href="#popup1">
+                        <div class="swiper-button-next2 button-next play-position" style="z-index: 250;"></div>
+                    </a>
+
+
+                    <button type="button"
+                        class="btn btn-primary btn-lg btn-block rounded-0 btn-word btn-word-size "> Free
+                        Preview&#10148;</button>
+
+
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary my-4 rounded-pill btn-word "
+                            style="width: 180px;">Add to
+                            chart
+                        </button>
+
+                    </div>
+
+                    <div class="card-body border-top">
+                       
+
+                        <table class="table table-bordered table-active border-light text-content font-10 ">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="font-10"></th>
+                                <th scope="col" class="font-10">Mon</th>
+                                <th scope="col" class="font-10">Tue</th>
+                                <th scope="col" class="font-10">Wed</th>
+                                <th scope="col" class="font-10">Thu</th>
+                                <th scope="col" class="font-10">Fri</th>
+                                <th scope="col" class="font-10">Sat</th>
+                                <th scope="col" class="font-10">Sun</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >Morning <br> 06 - 12 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td >Afternoon <br> 13 - 18 </td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Evening <br> 18 - 24 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Night <br> 0 - 6 </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                              </tr>
+                             
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="card mini-schedule d-none show3" style="position: absolute;right:.16vw; top: 15vh;width: 28rem;" >
+
+
+                    <img src="../img/L1003376.jpg" style="z-index: 240;" class="w-100">
+                    <a href="#popup1">
+                        <div class="swiper-button-next button-next play-position" style="z-index: 250;"></div>
+                    </a>
+
+
+                    <button type="button"
+                        class="btn btn-primary btn-lg btn-block rounded-0 btn-word btn-word-size "> Free
+                        Preview&#10148;</button>
+
+
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary my-4 rounded-pill btn-word "
+                            style="width: 180px;">Add to
+                            chart
+                        </button>
+
+                    </div>
+
+                    <div class="card-body border-top">
+                       
+
+                        <table class="table table-bordered table-active border-light text-content font-10 ">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="font-10"></th>
+                                <th scope="col" class="font-10">Mon</th>
+                                <th scope="col" class="font-10">Tue</th>
+                                <th scope="col" class="font-10">Wed</th>
+                                <th scope="col" class="font-10">Thu</th>
+                                <th scope="col" class="font-10">Fri</th>
+                                <th scope="col" class="font-10">Sat</th>
+                                <th scope="col" class="font-10">Sun</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >Morning <br> 06 - 12 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td >Afternoon <br> 13 - 18 </td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Evening <br> 18 - 24 </td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-primary"></td>
+                                <td class="table-primary"></td>
+                              </tr>
+                              <tr>
+                                <td >Night <br> 0 - 6 </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                                <td ></td>
+                                <td></td>
+                              </tr>
+                             
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+     <!-- pop up跳出 start -->
+
+     <div class="container ">
+        <div id="popup1" class="overlayup  bg-black py-5  ">
+            <div class="popup ">
+                <p class="pt-3 pl-3 text-white  btn-word">Class Preview</p>
+                <p class="pl-3 text-white h4 btn-word">Grammar Beginner</p>
+                <a class="closeup " href="#!">&times;</a>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="../video/shad.mp4" allowfullscreen></iframe>
+                  </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- pop up跳出 end -->
+
+    <footer class="d-none d-xl-flex section fixed-bottom py-2 " style="background:#1a1c20;height: 81px;color:white;">
+        <div class="container-fluid ">
+            <div class="row py-3">
+
+                <div class="row">
+                    <div class="" style="margin-left:30px">
+                        <h3>IELTS online</h3>
+
+                    </div>
+                    <div class=" d-flex justify-content-between text-white">
+                        <a class="nav-link text-white " href="javascript:;"><i
+                                class="fas fa-map-marker-alt mr-2 text-white"></i>106台灣台北市大安區忠孝東路四段2號3樓(捷運忠孝復興站)</a>
+                        <a class="nav-link text-white" href="mailto:info@ielts7online.com.tw"
+                            style="font-family:  Arial;"><i
+                                class="fas fa-envelope mr-2"></i>info@ielts7online.com.tw</a>
+                        <a class="nav-link text-white" href="tel:02-2771-0088" style="font-family:  Arial;"><i
+                                class="fas fa-phone-square mr-2 text-white"></i>(02)
+                            2771-0088</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class=" col-xl collapse d-flex  justify-content-end ">
+                    <div class="d-flex justify-content-between mt-2" style="">
+                        <a href="#"><i class="fas fa-globe-americas px-1 text-white"></i></a>
+                        <a href="#" class="text-white px-1">中</a>
+                        <a href="#" class="text-white px-1">EN</a>
+                    </div>
+                    <div class="  text-white d-flex justify-content-between ">
+                        <a class="nav-link text-white" href="https://www.whygo.com.tw/" target="_blank">About</a>
+                        <a class="nav-link text-white" href="https://www.whygo.com.tw/contact-us/"
+                            target="_blank">Questions</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <script src="./scripts/jquery-3.3.1.min.js"></script> -->
+    <script src="../scripts/jquery.easing.min.js"></script>
+
+    <!-- <script src="./scripts/bootstrap.bundle.min.js"></script> -->
+    <script src="../scripts/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+
+        $('.avaibeTime').click(function () {
+            $(".fa-sun , .freeTime1").toggleClass("text-lightgray");
+            $(this).toggleClass("text-warning");
+        });
+
+
+
+
+        $('.avaibeTime2').click(function () {
+            $(".fa-coffee , .freeTime2").toggleClass("text-lightgray");
+            $(this).toggleClass("text-warning");
+        });
+
+
+        $('.avaibeTime3').click(function () {
+            $(".fa-moon , .freeTime3").toggleClass("text-lightgray");
+            $(this).toggleClass("text-warning");
+        });
+
+
+        $('.avaibeTime4').click(function () {
+            $(".fa-laugh , .freeTime4").toggleClass("text-lightgray");
+            $(this).toggleClass("text-warning");
+        });
+
+
+
+    </script>
+
+
+    <!-- pop up跳出 start -->
+    <script>
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+
+
+    </script>
+
+    <!-- pop up跳出 end -->
+
+    <!-- 跳出時間表  -->
+
+    <script> 
+    
+    
+    
+// $(".teacher-show").mouseenter(function(){
+
+//     $(".mini-schedule").removeClass("d-none");
+//     $(".mini-schedule2,.mini-schedule3").addClass("d-none");
+
+// });
+
+
+
+// $(".teacher-show2").mouseenter(function(){
+// $(".mini-schedule,.mini-schedule3").addClass("d-none");
+
+// $(".mini-schedule2").removeClass("d-none");
+
+
+// });
+
+// $(".teacher-show3").mouseenter(function(){
+// $(".mini-schedule,.mini-schedule2").addClass("d-none");
+
+// $(".mini-schedule3").removeClass("d-none");
+
+
+// });
+
+// for(var i =1; i <= 10; i++){
+//     console.log($('.example').clone());
+//     $('.example').clone().append('.mouse-show:last');
+// }
+
+$('.mouse-show').on('mouseenter', function() {
+    console.log("mouseenter", $(this).attr('test-div'));
+    console.log("removeClass", ".mini-schedule." + $(this).data('div'));
+
+    $(".mini-schedule").addClass("d-none");
+    $(".mini-schedule." + $(this).data('div')).removeClass("d-none");
+
+});
+
+
+ </script>
+
+</body>
+
+</html>
