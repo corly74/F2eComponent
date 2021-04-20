@@ -1,0 +1,156 @@
+.teacherlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .teacherlist {
+    margin-top: 15vh;
+  }
+}
+@media (max-width: 425PX) {
+  .teacherlist {
+    margin-top: 4vh;
+    margin-left: -4vw;
+  }
+}
+@media (max-width: 320px) {
+  .teacherlist {
+    margin-left: -8px;
+    margin-top: 8vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .teacherlist li {
+    margin-left: 20px;
+  }
+}
+
+.advantage {
+  font-size: 60px;
+  color: #007bff;
+  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 1440PX) {
+  .advantage {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .advantage {
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .advantage {
+    font-size: 44px;
+  }
+}
+@media (max-width: 425PX) {
+  .advantage {
+    font-size: 36px;
+  }
+}
+@media (max-width: 414px) {
+  .advantage {
+    font-size: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .advantage {
+    font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .advantage {
+    font-size: 28px;
+  }
+}
+@media (max-width: 320px) {
+  .advantage {
+    font-size: 28px;
+  }
+}
+
+.advantageul {
+  font-size: 36px;
+  line-height: 2;
+  margin-left: 3rem;
+  color: #007bff;
+}
+@media (max-width: 1024px) {
+  .advantageul {
+    font-size: 28px;
+  }
+}
+@media (max-width: 425PX) {
+  .advantageul {
+    font-size: 22px;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .advantageul {
+    font-size: 20px;
+  }
+}
+
+.advantageRIGHT {
+  margin-top: 140px;
+}
+@media (max-width: 1024px) {
+  .advantageRIGHT {
+    margin-top: 158px;
+    margin-left: 30px;
+    width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .advantageRIGHT {
+    margin-left: -80px;
+  }
+}
+@media (max-width: 425PX) {
+  .advantageRIGHT {
+    margin-left: -25vw;
+    margin-top: -20vh;
+  }
+}
+@media (max-width: 320px) {
+  .advantageRIGHT {
+    margin-top: -15vh;
+  }
+}
+
+@media (max-width: 425PX) {
+  .advantageIMG {
+    margin-left: 28vw;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 375px) {
+  .advantageIMG {
+    width: 80%;
+    margin-left: 35vw;
+  }
+}
+@media (max-width: 360px) {
+  .advantageIMG {
+    width: 72%;
+    margin-left: 35vw;
+    margin-top: 9vh;
+  }
+}
+@media (max-width: 320px) {
+  .advantageIMG {
+    margin-left: 35vw;
+    margin-top: 1vh;
+  }
+}
