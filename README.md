@@ -30,7 +30,7 @@
 
 
 <h3>6.jQuery data - * 匹配兩個物件</h3>
-[金流頁](https://corly74.github.io/F2eComponent/tabLogin/index.html)
+[預覽](https://corly74.github.io/F2eComponent/jquery_data/index.html)
 
 <h1>前端教學資源</h1>
 
